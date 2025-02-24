@@ -1,1 +1,1 @@
-# MemoriaLing-stica
+# MemoriaLinguistica

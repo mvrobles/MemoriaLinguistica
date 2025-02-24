@@ -1,0 +1,17 @@
+[project]
+name = "memorialinguistica"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "cookiecutter>=2.6.0",
+    "docker>=7.1.0",
+    "dotenv>=0.9.9",
+    "fastapi>=0.115.8",
+    "httpx>=0.28.1",
+    "mkdocs>=1.6.1",
+    "mkdocs-material>=9.6.5",
+    "torch>=2.6.0",
+    "uvicorn>=0.34.0",
+]
