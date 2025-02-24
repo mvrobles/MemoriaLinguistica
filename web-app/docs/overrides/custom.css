@@ -1,0 +1,56 @@
+/* Color de fondo de toda la página */
+body {
+    background-color: #f8f9fa !important;  /* Mismo color del contenedor */
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 5%;
+    background-color: #f8f9fa;  /* Fondo igualado */
+}
+
+/* Texto alineado a la izquierda */
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #13322B;
+}
+
+.hero-text h2 {
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    color: #6B7A77;
+}
+
+.hero-text p {
+    font-size: 1.0em;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Botón */
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #13322B;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.button:hover {
+    background-color: #1a4a3e;
+}
+
+/* Imagen alineada
