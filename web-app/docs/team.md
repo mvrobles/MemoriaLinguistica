@@ -34,8 +34,8 @@ hide:
 
   /* Profile image styling */
   .team-member img {
-    width: 200px;
-    height: 200px;
+    width: 150px; /* Reduced width */
+    height: 150px; /* Reduced height */
     object-fit: cover;
     border-radius: 50%;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -87,9 +87,9 @@ hide:
   
   <!-- Team Member 1 -->
   <div class="team-member">
-    <img src="/images/team/jose_ipuana.jpeg" alt="Antonio José Ipuana">
+    <img src="/images/team/wayuunaiki.jpg" alt="Antonio José Ipuana">
     <h3>Antonio José Ipuana</h3>
-    <p>Wayuunaiki Translator</p>
+    <p>Wayuunaiki translation services</p>
   </div>
 
   <!-- Team Member 2 -->
@@ -107,3 +107,4 @@ hide:
   </div>
 
 </div>
+
