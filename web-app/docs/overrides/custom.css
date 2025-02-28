@@ -53,4 +53,13 @@ body {
     background-color: #1a4a3e;
 }
 
+.a, .md-typeset a, .md-nav__link, .md-footer__link {
+    color: #dc1a05 !important;
+    text-decoration: none;
+  }
+  
+.a:hover, .md-typeset a:hover, .md-nav__link:hover, .md-footer__link:hover {
+    color: #dc1a05 !important;
+    text-decoration: underline;
+  }
 /* Imagen alineada

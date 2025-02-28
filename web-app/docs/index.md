@@ -80,6 +80,11 @@ hide:
     padding: 5px 1%;
   }
 
+  .a {
+    color:rgb(45, 234, 218) !important; /* Orange color */
+    text-decoration: none; /* Optional: removes underline */
+  }
+
   .summary {
     flex: 1;
     min-width: 50%;
@@ -107,7 +112,7 @@ hide:
 }
 
 .resource-box {
-  width: 80%; /* Adjust width as needed */
+  width: 85%; /* Adjust width as needed */
   padding: 15px;
   border-radius: 4px;
   text-align: left;
@@ -197,6 +202,58 @@ hide:
   .timeline-box p {
     font-size: 1em;
   }
+
+  .footer-section {
+      width: 100vw; /* Full width of the viewport */
+      position: relative;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+      
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+      background:#8bd1c2; 
+      color: black;;
+      padding: 40px;
+      box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .footer-left {
+      flex: 1;
+      padding-left: 10%;
+  }
+
+  .footer-left h2 {
+      font-size: 1.8em;
+      margin-bottom: 10px;
+  }
+
+  .footer-left p {
+      font-size: 1.2em;
+      margin: 5px 0;
+  }
+
+  .footer-left a {
+      color: white;
+      font-weight: bold;
+      text-decoration: underline;
+  }
+
+  .footer-right {
+      flex: 0.5;
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 10%;
+  }
+
+  .uniandes-logo {
+      width: 200px;
+      filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.3));
+  }
+
 
   /* Container for the team section */
   .team-container {
@@ -317,17 +374,18 @@ hide:
   <h2 style="font-weight: bold;">Resources</h2>
 
   <div class="resource-container">
-    <div class="resource-box" style="background: rgba(238,192,82,0.8);">
+    <div class="resource-box" style="background: rgba(145,197,177,0.8);">
       <h3>Datasets</h3>
     </div>
-    <div class="resource-box" style="background: rgba(145,197,177,0.8);">
+    <div class="resource-box" style="background: rgba(255,148,8,0.8);">
       <h3>Models</h3>
+      <li> <a href="https://www.dropbox.com/scl/fo/bj7ra25nbf0bjed5f6y92/ANxU5o3Qc0t1a-91dKbRcv4?rlkey=ag6dssslslwiqjrtg6kd8a8ym&st=ejt0m93b&dl=0" target="_blank">Wayuunaiki, Inga, Nasa Yuwe and Arhuaco models</a></li>
     </div>
     <div class="resource-box" style="background: rgba(238,192,82,0.8);">
       <h3>Publications</h3>
       <ul>
-        <li>Preserving Heritage: Developing a Translation Tool for Indigenous Dialects. In Proceedings of the 17th ACM International Conference on Web Search and Data Mining (WSDM '24). Association for Computing Machinery, New York, NY, USA, 1200–1203.  <a href="https://doi.org/10.1145/3616855.3637828" target="_blank">https://doi.org/10.1145/3616855.3637828</a></li>
-        <li>Translation systems for low-resource Colombian Indigenous languages, a first step towards cultural preservation. In Proceedings of the 4th Workshop on Natural Language Processing for Indigenous Languages of the Americas (AmericasNLP 2024), pages 7–14, Mexico City, Mexico. Association for Computational Linguistics.<a href="https://aclanthology.org/2024.americasnlp-1.2/" target="_blank">https://aclanthology.org/2024.americasnlp-1.2/</a></li>
+        <li>Preserving Heritage: Developing a Translation Tool for Indigenous Dialects. In Proceedings of the 17th ACM International Conference on Web Search and Data Mining (WSDM '24). <a href="https://doi.org/10.1145/3616855.3637828" target="_blank">https://doi.org/10.1145/3616855.3637828</a></li>
+        <li>Translation systems for low-resource Colombian Indigenous languages, a first step towards cultural preservation. In Proceedings of the 4th Workshop on Natural Language Processing for Indigenous Languages of the Americas (AmericasNLP 2024).<a href="https://aclanthology.org/2024.americasnlp-1.2/" target="_blank">https://aclanthology.org/2024.americasnlp-1.2/</a></li>
       </ul>
     </div>
   </div>
@@ -380,3 +438,16 @@ hide:
     <p>Universidad de Cauca</p>
   </div>
 </div>
+
+-----
+<div class="footer-section">
+    <div class="footer-left">
+        <h2>Thank You for Visiting</h2>
+        <p>If you would like to get in touch, feel free to contact us:</p>
+        <p>{rf.manrique, jc.prietoa, mv.robles}@uniandes.edu.co</p>
+    </div>
+    <div class="footer-right">
+        <img src="images/logos/uniandes.png" alt="Universidad de los Andes" class="uniandes-logo">
+    </div>
+</div>
+
