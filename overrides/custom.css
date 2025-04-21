@@ -1,0 +1,227 @@
+/* Color de fondo de toda la página */
+body {
+    background-color: #f8f9fa !important;  /* Mismo color del contenedor */
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 5%;
+    background-color: #f8f9fa;  /* Fondo igualado */
+}
+
+/* Texto alineado a la izquierda */
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #13322B;
+}
+
+.hero-text h2 {
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    color: #6B7A77;
+}
+
+.hero-text p {
+    font-size: 1.0em;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Botón */
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #13322B;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.md-header__button.md-logo {
+    display: none !important;
+  }
+
+.button:hover {
+    background-color: #1a4a3e;
+}
+
+.a, .md-typeset a, .md-nav__link, .md-footer__link {
+    color: #dc1a05 !important;
+    text-decoration: none;
+  }
+  
+.a:hover, .md-typeset a:hover, .md-nav__link:hover, .md-footer__link:hover {
+    color: #dc1a05 !important;
+    text-decoration: underline;
+  }
+
+.custom-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1b1c1d;
+    padding: 0px 0; /* Increased padding to increase height */
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    box-shadow: none;
+}
+
+/* Este contenedor alinea el logo con el resto del contenido */
+.navbar-container {
+    max-width: 1200px;  /* O el mismo ancho que usas en la sección especial */
+    margin: 0 auto;
+    padding: 0 20px;    /* El mismo padding que la sección especial */
+    width: 100%;
+    display: flex;
+}
+  .navbar-logo img {
+    height: auto;
+    max-height: 60px;
+  }
+  
+
+  .Site-footer {
+    width: 100%;
+    padding: 20px;
+    font-size: 13px;
+    text-align: center;
+    background-color: black;  /* Fondo negro */
+    color: white;  /* Texto blanco para visibilidad */
+    margin-top: 20px; /* Espacio entre el contenido y el footer */
+  }
+  
+  .ui.container {
+    display: block;
+    max-width: 100% !important;
+  }
+  
+  .site-footer a {
+    color: white;  /* Enlaces blancos */
+    text-decoration: none;  /* Sin subrayado */
+  }
+  
+  .site-footer a:hover {
+    text-decoration: underline;  /* Subraya los enlaces cuando pasas el mouse */
+  }
+  
+  /* Añadir espacio superior al contenido de la página para que no se solape con el footer */
+  body {
+    padding-bottom: 100px; /* Ajusta este valor si es necesario */
+  }
+  
+  
+/* Estilos del nuevo footer */
+.Site-footer {
+    width: 100%;
+    margin-top: auto;
+    padding: 20px 10px;
+    font-size: 13px;
+    text-align: center;
+    background: black;
+    color: white;
+    border-top: 2px solid #444;
+}
+
+.ui.container {
+    display: block;
+    max-width: 100% !important;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Estilos del nuevo footer - Versión Full Width */
+.Site-footer {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: 0px 0; /* Solo padding vertical */
+    font-size: 13px;
+    text-align: center;
+    background: black;
+    color: white;
+    border-top: 2px solid #444;
+    box-sizing: border-box;
+}
+
+.ui.container {
+    width: 100%;
+    max-width: 100% !important;
+    margin: 0;
+    padding: 0 !important;
+}
+/* Estilos del nuevo footer - Sin padding inferior */
+.Site-footer {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: 20px 0 0 0; /* Solo 20px arriba, 0 en otros lados */
+    font-size: 13px;
+    text-align: center;
+    background: black;
+    color: white;
+    border-top: 2px solid #444;
+    box-sizing: border-box;
+}
+
+.ui.container {
+    width: 100%;
+    max-width: 100% !important;
+    margin: 0;
+    padding: 0 !important;
+}
+
+.md-main {
+    flex-grow: 0 !important; /* Evita que crezca y cree espacio */
+}
+
+.Site-footer a {
+    color: #4283c4!important;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.Site-footer a:hover {
+    color: #1f70bf !important;
+    text-decoration: underline;
+}
+
+.ui.center.aligned.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    line-height: 1.6;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+/* Elimina espacio del contenedor principal de MkDocs */
+.md-main__inner {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.md-content__inner {
+    margin-bottom: 0 !important;
+}
+
+.md-footer {
+    display: none !important; /* Oculta el footer por defecto de MkDocs */
+}
