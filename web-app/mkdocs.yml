@@ -1,6 +1,6 @@
 site_name: Mi Proyecto  
 theme:
-
+  logo: null
   name: material  
   palette:
     scheme: light 
@@ -21,3 +21,5 @@ extra:
   
 extra_css:
 - overrides/custom.css
+
+plugins: []

@@ -3,6 +3,10 @@ title: " "
 hide:
   - navigation
   - toc  # Oculta la barra de navegación
+  - edit
+  - path
+  - header
+  - footer
 ---
 <style>
   /* Ajustes generales */
@@ -14,7 +18,7 @@ hide:
     overflow-x: hidden !important;
   }
 
-  /* Barra de navegación superior con imagen de fondo */
+  Barra de navegación superior con imagen de fondo
   .md-header {
     background: url('images/tejido.png') no-repeat center center;
     background-size: cover;
@@ -289,6 +293,9 @@ hide:
     font-size: 1.1em;
     color: #555;
   }
+
+
+
   @media (max-width: 900px) {
     .timeline-container {
       flex-wrap: wrap; /* Permite que los rectángulos se acomoden en varias filas si la pantalla es pequeña */
@@ -297,6 +304,17 @@ hide:
       width: 100%; /* Hace que los rectángulos ocupen toda la línea en pantallas pequeñas */
     }
 </style>
+
+<!-- Barra de navegación fija con logo DISC (alineado con margen izquierdo de sección especial) -->
+<div class="custom-navbar">
+  <div class="navbar-container">
+    <a href="https://sistemas.uniandes.edu.co/" class="navbar-logo">
+      <img src="images/logos/logo_disc.png" alt="Logo DISC">
+    </a>
+  </div>
+</div>
+
+
 
 <!-- Sección Principal -->
 <div class="hero">
@@ -439,7 +457,7 @@ hide:
   </div>
 </div>
 
------
+<!-- -----
 <div class="footer-section">
     <div class="footer-left">
         <h2>Thank You for Visiting</h2>
@@ -449,5 +467,23 @@ hide:
     <div class="footer-right">
         <img src="images/logos/uniandes.png" alt="Universidad de los Andes" class="uniandes-logo">
     </div>
-</div>
+</div> -->
 
+<!-- Nuevo Footer -->
+<div class="Site-footer">
+  <div class="ui container">
+    <div class="ui center aligned container">
+      <a href="https://apoyofinanciero.uniandes.edu.co/">Apoyo Financiero</a> |
+      <a href="http://registro.uniandes.edu.co/">Admisiones y Registro</a> |
+      <a href="http://biblioteca.uniandes.edu.co/">Biblioteca</a> |
+      <a href="https://bloqueneon.uniandes.edu.co">Bloque Neon</a> |
+      <a href="http://decanaturadeestudiantes.uniandes.edu.co/">Decanatura de Estudiantes</a>
+      <br>
+      Universidad de los Andes | Vigilada Mineducación <br>
+      Reconocimiento como Universidad: Decreto 1297 del 30 de mayo de 1964.<br>
+      Reconocimiento personería jurídica: Resolución 28 del 23 de febrero de 1949 Minjusticia<br>
+      Edificio Mario Laserna Cra 1Este No 19A - 40 Bogotá (Colombia) | Tel: [571] 3394949 Ext: 2860, 2861, 2862 | Fax: [571] 3324325 <br>
+      © 2025 - <a href="https://sistemas.uniandes.edu.co/">Departamento de Ingeniería de Sistemas y Computación</a>
+    </div>
+  </div>
+</div>
