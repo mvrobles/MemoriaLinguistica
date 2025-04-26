@@ -9,6 +9,10 @@ hide:
   - footer
 ---
 <style>
+header.md-header {
+    display: none;
+  }
+
   /* Ajustes generales */
   html, body {
     margin: 0 !important;
@@ -16,25 +20,6 @@ hide:
     width: 100vw;
     max-width: 100vw;
     overflow-x: hidden !important;
-  }
-
-  Barra de navegación superior con imagen de fondo
-  .md-header {
-    background: url('images/tejido.png') no-repeat center center;
-    background-size: cover;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white !important;
-  }
-
-  .md-header__title {
-    display: none !important;
-  }
-
-  .header-image {
-    display: none;
   }
 
   .md-content__title {
@@ -264,7 +249,7 @@ hide:
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 50px;
     padding: 0px;
   }
 
@@ -303,6 +288,7 @@ hide:
     .timeline-box {
       width: 100%; /* Hace que los rectángulos ocupen toda la línea en pantallas pequeñas */
     }
+  }
 </style>
 
 <!-- Barra de navegación fija con logo DISC (alineado con margen izquierdo de sección especial) -->
@@ -314,8 +300,6 @@ hide:
   </div>
 </div>
 
-
-
 <!-- Sección Principal -->
 <div class="hero">
   <div class="hero-text">
@@ -324,13 +308,13 @@ hide:
     <p>
       Indigenous languages in Colombia face the risk of extinction due to the decline in native speakers and lack of digital resources. This project leverages AI-driven machine translation models tailored for low-resource languages, aiming to create digital tools that support linguistic preservation. Additionally, we are actively working on translations to expand the available datasets for Indigenous language machine translation, ensuring better model performance and broader linguistic coverage.
     </p>
+    <a href="resources" class="btn">Explore Resources</a>
   </div>
   <div style="margin-right: 40px;"></div>
   <div class="hero-image">
     <img src="images/logoGPT2.webp" alt="Logo">
   </div>
 </div>
-
 
 
 -------
@@ -389,60 +373,43 @@ hide:
 -------
 
 <div style="text-align: center;">
-  <h2 style="font-weight: bold;">Resources</h2>
-
-  <div class="resource-container">
-    <div class="resource-box" style="background: rgba(145,197,177,0.8);">
-      <h3>Datasets</h3>
-    </div>
-    <div class="resource-box" style="background: rgba(255,148,8,0.8);">
-      <h3>Models</h3>
-      <li> <a href="https://www.dropbox.com/scl/fo/bj7ra25nbf0bjed5f6y92/ANxU5o3Qc0t1a-91dKbRcv4?rlkey=ag6dssslslwiqjrtg6kd8a8ym&st=ejt0m93b&dl=0" target="_blank">Wayuunaiki, Inga, Nasa Yuwe and Arhuaco models</a></li>
-    </div>
-    <div class="resource-box" style="background: rgba(238,192,82,0.8);">
-      <h3>Publications</h3>
-      <ul>
-        <li>Preserving Heritage: Developing a Translation Tool for Indigenous Dialects. In Proceedings of the 17th ACM International Conference on Web Search and Data Mining (WSDM '24). <a href="https://doi.org/10.1145/3616855.3637828" target="_blank">https://doi.org/10.1145/3616855.3637828</a></li>
-        <li>Translation systems for low-resource Colombian Indigenous languages, a first step towards cultural preservation. In Proceedings of the 4th Workshop on Natural Language Processing for Indigenous Languages of the Americas (AmericasNLP 2024).<a href="https://aclanthology.org/2024.americasnlp-1.2/" target="_blank">https://aclanthology.org/2024.americasnlp-1.2/</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
--------
-
-<div style="text-align: center;">
-  <h2 style="font-weight: bold;">Our team</h2>
+  <h2 style="font-weight: bold;">Our team of researchers</h2>
 </div>
 <div class="team-container">
   
   <!-- Team Member 1 -->
   <div class="team-member">
-    <img src="/images/team/ruben.jpg" alt="Rubén Manrique">
+    <img src="images/team/ruben.jpg" alt="Rubén Manrique">
     <h3>Rubén Manrique</h3>
     <p>Lead Researcher</p>
-    <p>Universidad de Los Andes</p>
+    <p>rf.manrique@uniandes.edu.co</p>
   </div>
 
   <!-- Team Member 2 -->
   <div class="team-member">
-    <img src="/images/team/juanca.jpg" alt="Person 2">
+    <img src="images/team/juanca.jpg" alt="Person 2">
     <h3>Juan Camilo Prieto</h3>
     <p>Researcher</p>
-    <p>Universidad de Los Andes</p>
+    <p>jc.prietoa@uniandes.edu.co</p>
   </div>
 
   <!-- Team Member 3 -->
   <div class="team-member">
-    <img src="/images/team/melissa.jpg" alt="Person 3">
+    <img src="images/team/melissa.jpg" alt="Person 3">
     <h3>Melissa Robles</h3>
     <p>Researcher</p>
-    <p>Universidad de Los Andes</p>
+    <p>mv.robles@uniandes.edu.co</p>
   </div>
+</div>
 
-  
+<div style="text-align: center;">
+  <h2 style="font-weight: bold;">Translators</h2>
+</div>
+<div class="team-container">
+
   <!-- Team Member 1 -->
   <div class="team-member">
-    <img src="/images/team/wayuunaiki.jpg" alt="Antonio José Ipuana">
+    <img src="images/team/wayuunaiki.jpg" alt="Antonio José Ipuana">
     <h3>Antonio José Ipuana</h3>
     <p>Wayuunaiki Translator</p>
     <p>Wayuunaiki translation services</p>
@@ -450,24 +417,12 @@ hide:
 
   <!-- Team Member 2 -->
   <div class="team-member">
-    <img src="/images/team/unicauca.png" alt="Manuel Muyuy">
+    <img src="images/team/unicauca.png" alt="Manuel Muyuy">
     <h3>Manuel Muyuy</h3>
     <p>Nasa Yuwe Translator</p>
     <p>Universidad de Cauca</p>
   </div>
 </div>
-
-<!-- -----
-<div class="footer-section">
-    <div class="footer-left">
-        <h2>Thank You for Visiting</h2>
-        <p>If you would like to get in touch, feel free to contact us:</p>
-        <p>{rf.manrique, jc.prietoa, mv.robles}@uniandes.edu.co</p>
-    </div>
-    <div class="footer-right">
-        <img src="images/logos/uniandes.png" alt="Universidad de los Andes" class="uniandes-logo">
-    </div>
-</div> -->
 
 <!-- Nuevo Footer -->
 <div class="Site-footer">
