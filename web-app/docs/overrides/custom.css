@@ -256,15 +256,6 @@ a:hover {
   text-decoration: none; /* Evitar subrayado al hacer hover */
 }
 
-/* También puedes agregar estos estilos para asegurar que no haya conflicto con estilos previos */
-a:focus {
-  color: #ff6600!important;
-  text-decoration: none; /* Evitar subrayado en el foco */
-}
-
-a:visited {
-  color: #ff6600 !important; /* Color para los enlaces visitados */
-}
 
 a {
   font-weight: normal !important;
