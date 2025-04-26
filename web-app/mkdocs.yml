@@ -1,7 +1,8 @@
 site_name: Mi Proyecto  
 theme:
   logo: null
-  name: material  
+  name: material
+  custom_dir: docs/overrides
   palette:
     scheme: light 
     primary: red
@@ -10,13 +11,13 @@ theme:
     text: Roboto
     code: Roboto Mono
   features:
-    - navigation.instant  # Carga rápida
-    - navigation.indexes  # Mejor organización
-    - toc.integrate       # Íconos de navegación en la barra superior
+    - navigation.instant
+    - navigation.indexes
+    - toc.integrate
     - header.hidden
 
 extra:
-  homepage: index.md  # Hace que la página de inicio sea especial
+  homepage: index.md
   generator: false
   
 extra_css:
