@@ -155,8 +155,8 @@ hide:
     <div class="download-box">
       <h3>Books</h3>
       <ul>
-        <li><a href="LINK_TO_BOOK_1"> O'unaa unapümuin sülerru'je tü Maa'kat</a> –  (Journey to the Center of the Earth, Julio Verne) Translation into Wayuunaiki.</li>
-        <li><a href="LINK_TO_BOOK_1"> Chaupi alpa ukuma purii </a> –  (Journey to the Center of the Earth, Julio Verne) Translation into Inga.</li>
+        <li><a href="/books/Viaje al centro de la tierra - wayuunaiki.pdf" target="_blank"> O'unaa unapümuin sülerru'je tü Maa'kat</a> –  (Journey to the Center of the Earth, Julio Verne) Translation into Wayuunaiki.</li>
+        <li><a href="/books/Viaje al centro de la tierra - inga.pdf" target="_blank"> Chaupi alpa ukuma purii </a> –  (Journey to the Center of the Earth, Julio Verne) Translation into Inga.</li>
         <!-- Agrega más libros aquí -->
       </ul>
     </div>
