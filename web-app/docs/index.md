@@ -308,7 +308,7 @@ header.md-header {
     <p>
       Indigenous languages in Colombia face the risk of extinction due to the decline in native speakers and lack of digital resources. This project leverages AI-driven machine translation models tailored for low-resource languages, aiming to create digital tools that support linguistic preservation. Additionally, we are actively working on translations to expand the available datasets for Indigenous language machine translation, ensuring better model performance and broader linguistic coverage.
     </p>
-    <a href="resources" class="btn">Explore Resources</a>
+    <a href="/resources/" class="btn">Explore Resources</a>
   </div>
   <div style="margin-right: 40px;"></div>
   <div class="hero-image">

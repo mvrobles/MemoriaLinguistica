@@ -3,6 +3,7 @@ theme:
   logo: null
   name: material
   custom_dir: docs/overrides
+  use_directory_urls: true
   palette:
     scheme: light 
     primary: red
