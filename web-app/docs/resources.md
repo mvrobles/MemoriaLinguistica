@@ -128,17 +128,44 @@ hide:
   header.md-header {
     display: none;
   }
+  
+  .back-to-home {
+    margin: 20px;
+    text-align: left;
+  }
+
+  .back-arrow {
+    font-size: 1.2em;
+    color: #45b8b0;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .back-arrow:hover {
+    text-decoration: underline;
+    color: #333;
+  }
 
 </style>
-
 <!-- Barra de navegación fija con logo DISC (alineado con margen izquierdo de sección especial) -->
 <div class="custom-navbar">
   <div class="navbar-container">
-    <a href="https://sistemas.uniandes.edu.co/" class="navbar-logo">
+    <a href="https://sistemas.uniandes.edu.co/" target="_blank" class="navbar-logo">
       <img src="/images/logos/logo_disc.png" alt="Logo DISC">
     </a>
   </div>
 </div>
+
+<!-- Flecha para regresar a la página principal -->
+<div class="back-to-home">
+  <a href="/" class="back-arrow">
+    &#8592; Home
+  </a>
+</div>
+
+<style>
+
+</style>
 
 <div class="resources-section">
   <h2>Available Resources</h2>
@@ -147,8 +174,8 @@ hide:
     <div class="download-box">
       <h3>Datasets and models</h3>
       <ul>
-        <li><a href="https://www.dropbox.com/scl/fo/bj7ra25nbf0bjed5f6y92/AEoZOR3kt_53Qy9ATWEdCq0/datasets?dl=0&rlkey=ag6dssslslwiqjrtg6kd8a8ym&subfolder_nav_tracking=1">Translation datasets for Wayuunaiki, Arhuaco, Inga, and Nasa</a> – Parallel corpus of Indigenous languages to Spanish.</li>
-        <li><a href="https://www.dropbox.com/scl/fo/bj7ra25nbf0bjed5f6y92/AA45b7hSqeVkWDYWmaDyxfA/models?dl=0&rlkey=ag6dssslslwiqjrtg6kd8a8ym&subfolder_nav_tracking=1">Translation models for Wayuunaiki, Arhuaco, Inga, and Nasa</a> – The best models for each language.</li>
+        <li><a href="https://www.dropbox.com/scl/fo/bj7ra25nbf0bjed5f6y92/AEoZOR3kt_53Qy9ATWEdCq0/datasets?dl=0&rlkey=ag6dssslslwiqjrtg6kd8a8ym&subfolder_nav_tracking=1" target="_blank">Translation datasets for Wayuunaiki, Arhuaco, Inga, and Nasa</a> – Parallel corpus of Indigenous languages to Spanish.</li>
+        <li><a href="https://www.dropbox.com/scl/fo/bj7ra25nbf0bjed5f6y92/AA45b7hSqeVkWDYWmaDyxfA/models?dl=0&rlkey=ag6dssslslwiqjrtg6kd8a8ym&subfolder_nav_tracking=1" target="_blank">Translation models for Wayuunaiki, Arhuaco, Inga, and Nasa</a> – The best models for each language.</li>
         <!-- Agrega más datasets aquí -->
       </ul>
     </div>
@@ -173,19 +200,19 @@ hide:
 
   <div class="paper-container">
     <div class="paper-box">
-      <a href="https://aclanthology.org/2024.americasnlp-1.2/">
+      <a href="https://aclanthology.org/2024.americasnlp-1.2/" target="_blank">
         <h3>Translation systems for low-resource Colombian Indigenous languages, a first step towards cultural preservation</h3>
         <p><strong>Summary:</strong> The use of machine learning and Natural Language Processing (NLP) technologies can assist in the preservation and revitalization of indigenous languages, particularly those classified as “low-resource.” Given the increasing digitization of information, the development of translation tools for these languages is of significant importance. These tools not only facilitate better access to digital resources for indigenous communities but also stimulate language preservation efforts and potentially foster more inclusive, equitable societies, as demonstrated by the AmericasNLP workshop since 2021. The focus of this paper is Colombia, a country home to 65 distinct indigenous languages, presenting a vast spectrum of linguistic characteristics. This cultural and linguistic diversity is an inherent pillar of the nation’s identity, and safeguarding it has been increasingly challenging given the dwindling number of native speakers and the communities’ inclination towards oral traditions. Considering this context, scattered initiatives exist to develop translation systems for these languages. However, these endeavors suffer from a lack of consolidated, comparable data. This paper consolidates a dataset of parallel data in four Colombian indigenous languages - Wayuunaiki, Arhuaco, Inga, and Nasa - gathered from existing digital resources. It also presents the creation of baseline models for future translation and comparison, ultimately serving as a catalyst for incorporating more digital resources progressively.</p>
         <p><strong>Cite:</strong> Juan Prieto, Cristian Martinez, Melissa Robles, Alberto Moreno, Sara Palacios, and Rubén Manrique. 2024. Translation systems for low-resource Colombian Indigenous languages, a first step towards cultural preservation. In Proceedings of the 4th Workshop on Natural Language Processing for Indigenous Languages of the Americas (AmericasNLP 2024), pages 7–14, Mexico City, Mexico. Association for Computational Linguistics.</p>
-      <a href="https://aclanthology.org/2024.americasnlp-1.2/">Read the full paper</a>
+      <a href="https://aclanthology.org/2024.americasnlp-1.2/" target="_blank">Read the full paper</a>
       </a>
     </div>
     <div class="paper-box">
-    <a href="https://dl.acm.org/doi/10.1145/3616855.3637828">
+    <a href="https://dl.acm.org/doi/10.1145/3616855.3637828" target="_blank">
       <h3>Preserving Heritage: Developing a Translation Tool for Indigenous Dialects</h3>
       <p><strong>Summary:</strong> The preservation and understanding of indigenous languages emerge as crucial, given their substantial contribution to the cultural and linguistic heritage of communities. Despite their undeniable value, these languages are threatened by extinction due to a dwindling number of native speakers and the predominance of oral traditions over written forms. In this context, this study aims to contribute to the conservation of these languages through the development of a Spanish-indigenous language translator. This research employs neural machine translation technology, investigating three distinct approaches: a translation model based on transformers, finetuning with a Finnish translator, and finetuning with a multilingual translator. The results obtained from these methodologies are promising, demonstrating competitive viability when compared to the limited existing research in this field of study.</p>
       <p><strong>Cite:</strong> Melissa Robles, Cristian A. Martínez, Juan C. Prieto, Sara Palacios, and Rubén Manrique. 2024. Preserving Heritage: Developing a Translation Tool for Indigenous Dialects. In Proceedings of the 17th ACM International Conference on Web Search and Data Mining (WSDM '24). Association for Computing Machinery, New York, NY, USA, 1200–1203. https://doi.org/10.1145/3616855.3637828</strong> </p>
-      <a href="https://dl.acm.org/doi/10.1145/3616855.3637828">Read the full paper</a>
+      <a href="https://dl.acm.org/doi/10.1145/3616855.3637828" target="_blank">Read the full paper</a>
     </a>
     </div>
   </div>
@@ -195,17 +222,17 @@ hide:
 <div class="Site-footer">
   <div class="ui container">
     <div class="ui center aligned container">
-      <a href="https://apoyofinanciero.uniandes.edu.co/">Apoyo Financiero</a> |
-      <a href="http://registro.uniandes.edu.co/">Admisiones y Registro</a> |
-      <a href="http://biblioteca.uniandes.edu.co/">Biblioteca</a> |
-      <a href="https://bloqueneon.uniandes.edu.co">Bloque Neon</a> |
-      <a href="http://decanaturadeestudiantes.uniandes.edu.co/">Decanatura de Estudiantes</a>
+      <a href="https://apoyofinanciero.uniandes.edu.co/" target="_blank">Apoyo Financiero</a> |
+      <a href="http://registro.uniandes.edu.co/" target="_blank">Admisiones y Registro</a> |
+      <a href="http://biblioteca.uniandes.edu.co/" target="_blank">Biblioteca</a> |
+      <a href="https://bloqueneon.uniandes.edu.co" target="_blank">Bloque Neon</a> |
+      <a href="http://decanaturadeestudiantes.uniandes.edu.co/" target="_blank">Decanatura de Estudiantes</a>
       <br>
       Universidad de los Andes | Vigilada Mineducación <br>
       Reconocimiento como Universidad: Decreto 1297 del 30 de mayo de 1964.<br>
       Reconocimiento personería jurídica: Resolución 28 del 23 de febrero de 1949 Minjusticia<br>
       Edificio Mario Laserna Cra 1Este No 19A - 40 Bogotá (Colombia) | Tel: [571] 3394949 Ext: 2860, 2861, 2862 | Fax: [571] 3324325 <br>
-      © 2025 - <a href="https://sistemas.uniandes.edu.co/">Departamento de Ingeniería de Sistemas y Computación</a>
+      © 2025 - <a href="https://sistemas.uniandes.edu.co/" target="_blank">Departamento de Ingeniería de Sistemas y Computación</a>
     </div>
   </div>
 </div>
