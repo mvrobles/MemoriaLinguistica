@@ -260,3 +260,7 @@ a:hover {
 a {
   font-weight: normal !important;
 }
+
+.team-container .team-member .email {
+  font-size: 0.7rem !important;
+}
