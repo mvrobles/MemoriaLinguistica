@@ -335,7 +335,9 @@
   text-decoration: none; /* Aseguramos que no haya subrayado al pasar el mouse */
 }
 
-
+.Site-footer {
+  margin-top: 3rem;
+}
   body {
     margin: 0;
     padding: 0;
@@ -409,6 +411,7 @@
       <ul>
         <li><a href="/books/Viaje al centro de la tierra - wayuunaiki.pdf" target="_blank"> O'unaa unapümuin sülerru'je tü Maa'kat</a> –  (Journey to the Center of the Earth, Julio Verne) Translation into Wayuunaiki.</li>
         <li><a href="/books/Viaje al centro de la tierra - inga.pdf" target="_blank"> Chaupi alpa ukuma purii </a> –  (Journey to the Center of the Earth, Julio Verne) Translation into Inga.</li>
+        <li><a href="/books/Viaje al centro de la tierra - kamentsa.pdf" target="_blank"> Jan tsbatsanamamabe jatsëntsak </a> –  (Journey to the Center of the Earth, Julio Verne) Translation into Kamentsa.</li>
         <!-- Agrega más libros aquí -->
       </ul>
     </div>
@@ -422,6 +425,16 @@
   </div>
 
   <h2>Publications</h2>
+
+  <div class="paper-container">
+    <div class="paper-box">
+      <a href="https://arxiv.org/abs/2508.19481" target="_blank">
+        <h3>Improving Low-Resource Translation with Dictionary-Guided Fine-Tuning and RL: A Spanish-to-Wayuunaiki Study</h3>
+        <p><strong>Summary:</strong> Low-resource machine translation remains a significant challenge for large language models (LLMs), which often lack exposure to these languages during pretraining and have limited parallel data for fine-tuning. We propose a novel approach that enhances translation for low-resource languages by integrating an external dictionary tool and training models end-to-end using reinforcement learning, in addition to supervised fine-tuning. Focusing on the Spanish-Wayuunaiki language pair, we frame translation as a tool-augmented decision-making problem in which the model can selectively consult a bilingual dictionary during generation. Our method combines supervised instruction tuning with Guided Reward Policy Optimization (GRPO), enabling the model to learn both when and how to use the tool effectively. BLEU similarity scores are used as rewards to guide this learning process. Preliminary results show that our tool-augmented models achieve up to +3.37 BLEU improvement over previous work, and a 18% relative gain compared to a supervised baseline without dictionary access, on the Spanish-Wayuunaiki test set from the AmericasNLP 2025 Shared Task. We also conduct ablation studies to assess the effects of model architecture and training strategy, comparing Qwen2.5-0.5B-Instruct with other models such as LLaMA and a prior NLLB-based system. These findings highlight the promise of combining LLMs with external tools and the role of reinforcement learning in improving translation quality in low-resource language settings.</p>
+        <p><strong>Cite:</strong> Manuel Mosquera, Melissa Robles, Johan Rodriguez, Ruben Manrique. 2025. Improving Low-Resource Translation with Dictionary-Guided Fine-Tuning and RL: A Spanish-to-Wayuunaiki Study. Arxiv pre-print https://arxiv.org/abs/2508.19481. Accepted in AAAI 2026.</p>
+      <a href="https://arxiv.org/abs/2508.19481" target="_blank">Read the full paper</a>
+      </a>
+  </div>
 
   <div class="paper-container">
     <div class="paper-box">
