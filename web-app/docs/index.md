@@ -17,8 +17,8 @@ header.md-header {
   html, body {
     margin: 0 !important;
     padding: 0 !important;
-    width: 100vw;
-    max-width: 100vw;
+    width: 100%;
+    max-width: 100%;
     overflow-x: hidden !important;
   }
 
@@ -117,8 +117,8 @@ header.md-header {
   }
   /* Cinta naranja con logos de empresas */
   .partner-logos {
-    width: 100vw;
-    max-width: 100vw;
+    width: 100%;
+    max-width: 100%;
     background-color: #ea812d;
     margin: 0;
     padding: 10px 0;
@@ -168,7 +168,7 @@ header.md-header {
     justify-content: space-around;
     align-items: stretch;
     gap: 10px;
-    flex-wrap: nowrap; /* Mantiene los rectángulos en una fila */
+    flex-wrap: wrap; /* Mantiene los rectángulos en una fila */
     max-width: 1000px;
     margin: auto;
   }
@@ -178,7 +178,8 @@ header.md-header {
     color: black;
     padding: 10px;
     border-radius: 10px;
-    width: 30%;
+    flex: 1 1 280px;
+    width: auto;
     text-align: center;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   }
@@ -193,7 +194,7 @@ header.md-header {
   }
 
   .footer-section {
-      width: 100vw; /* Full width of the viewport */
+      width: 100%; /* Full width of the viewport */
       position: relative;
       left: 50%;
       right: 50%;
@@ -289,6 +290,93 @@ header.md-header {
       width: 100%; /* Hace que los rectángulos ocupen toda la línea en pantallas pequeñas */
     }
   }
+
+  @media (max-width: 768px) {
+
+  /* Cualquier bloque "display:flex" con max-width:1000px (los tuyos) */
+  div[style*="display: flex"][style*="max-width: 1000px"] {
+    flex-direction: column !important;
+    gap: 16px !important;
+    padding: 0 16px;
+  }
+
+  div[style*="display: flex"][style*="max-width: 1000px"] > * {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  div[style*="display: flex"][style*="max-width: 1000px"] img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  .timeline-box { flex-basis: 100%; }
+  .team-container { gap: 20px; }
+  .team-member { max-width: 90%; }
+  .team-member img { width: 120px; height: 120px; }
+  .hero{
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-text, .hero-image{
+    width: 100%;
+  }
+  .hero-image img{
+    width: min(360px, 90vw); /* para que no quede gigante */
+  }
+  .hero{
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 14px !important;
+    padding: 14px 16px !important;
+  }
+
+  .hero-text{
+    width: 100% !important;
+    text-align: center !important;
+    max-width: none !important;
+  }
+
+  /* Evita cortes raros dentro de palabras (Preservatio / n) */
+  .hero-text, .hero-text h1, .hero-text h2, .hero-text p{
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+    hyphens: none !important;
+  }
+
+  /* Tamaños y márgenes SOLO en móvil */
+  .hero-text h2{
+    margin: 0 0 6px 0 !important;
+    font-size: 1rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .hero-text h1{
+    margin: 0 0 10px 0 !important;
+    font-size: 1.9rem !important;   /* fijo para que no se dispare */
+    line-height: 1.08 !important;
+  }
+
+  .hero-text p{
+    margin: 0 0 12px 0 !important;
+    font-size: 1rem !important;
+    line-height: 1.45 !important;
+  }
+
+  .hero-image{
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  .hero-image img{
+    width: min(420px, 95vw) !important;
+    height: auto !important;
+    max-width: 100% !important;
+  }
+}
 </style>
 
 <!-- Barra de navegación fija con logo DISC (alineado con margen izquierdo de sección especial) -->
@@ -310,7 +398,6 @@ header.md-header {
     </p>
     <a href="/resources/" class="btn">Explore Resources</a>
   </div>
-  <div style="margin-right: 40px;"></div>
   <div class="hero-image">
     <img src="images/logoGPT2.webp" alt="Logo">
   </div>
